@@ -1,7 +1,15 @@
 ---
+import SectionTitle from "@/components/SectionTitle.astro";
 import Layout from "@/layouts/Layout.astro";
+import { Content as TermsAndConditions } from "@/content/terms.md";
 ---
 
-<Layout title="Términos y condiciones">
-	<div>Terms</div>
+<Layout>
+	<section class="mx-[5vw] space-y-6 py-16">
+		<SectionTitle title="Términos y Condiciones" />
+
+		<div>
+			<TermsAndConditions />
+		</div>
+	</section>
 </Layout>

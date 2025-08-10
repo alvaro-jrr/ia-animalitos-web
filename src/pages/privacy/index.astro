@@ -1,7 +1,15 @@
 ---
+import SectionTitle from "@/components/SectionTitle.astro";
 import Layout from "@/layouts/Layout.astro";
+import { Content as PrivacyPolicy } from "@/content/privacy.md";
 ---
 
-<Layout title="Políticas de privacidad">
-	<div>Privacy</div>
+<Layout>
+	<section class="mx-[5vw] space-y-6 py-16">
+		<SectionTitle title="Políticas de Privacidad" />
+
+		<div>
+			<PrivacyPolicy />
+		</div>
+	</section>
 </Layout>

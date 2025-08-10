@@ -1,0 +1,50 @@
+**1. Nuestro Compromiso con tu Privacidad**
+
+En "iAnimalitos", tu privacidad es nuestra máxima prioridad. Hemos diseñado la Aplicación y su infraestructura de soporte con un enfoque minimalista en cuanto a los datos. Esta política describe cómo manejamos la información de una manera que respeta tu anonimato y confianza.
+
+Al utilizar "iAnimalitos", aceptas las prácticas descritas en esta política.
+
+**2. El Principio Fundamental: No Recopilamos Tus Datos**
+
+Queremos ser enfáticos y completamente transparentes: **"iAnimalitos" no recopila, no almacena, no comparte ni vende tu información personal.**
+
+Para ser más específicos:
+
+- **Sin Registro de Usuario:** No necesitas crear una cuenta ni proporcionar datos como tu nombre, correo electrónico o número de teléfono.
+- **Sin Publicidad de Terceros:** La aplicación no integra redes publicitarias, por lo que no se recopilan identificadores de dispositivo (como AAID o IDFA) para fines de rastreo.
+- **Sin Herramientas de Análisis (Analytics):** No utilizamos servicios de análisis de terceros. No monitoreamos cómo usas la aplicación ni generamos perfiles de comportamiento.
+- **Sin Datos de Ubicación:** La aplicación no solicita, rastrea ni almacena información sobre tu ubicación geográfica.
+
+Tu uso de la aplicación es, por diseño, privado y anónimo.
+
+**3. Cómo Funciona la Aplicación (Procesamiento Vía API)**
+
+Toda la información que ves en "iAnimalitos", incluyendo los resultados de los sorteos y los cálculos de probabilidad estadística, se obtiene desde nuestros servidores a través de una Interfaz de Programación de Aplicaciones (API). El proceso es el siguiente:
+
+1.  La Aplicación en tu dispositivo envía una solicitud a nuestros servidores para obtener los datos actualizados.
+2.  **Todo el procesamiento, incluyendo la ejecución del algoritmo de probabilidad, se realiza en nuestro servidor.**
+3.  Nuestro servidor envía la información final (resultados y probabilidades) de vuelta a tu dispositivo para ser mostrada.
+
+El único dato que nuestro servidor recibe para poder procesar esta solicitud es tu dirección IP, lo cual es un requisito técnico estándar para cualquier comunicación en internet. **Esta dirección IP no se registra, no se almacena, no se analiza ni se asocia con ninguna otra información.** Se utiliza únicamente para establecer la comunicación momentánea y se descarta de inmediato.
+
+**4. Permisos del Dispositivo**
+
+"iAnimalitos" solo solicita un permiso para funcionar:
+
+- **Acceso a Internet (INTERNET):** Este permiso es estrictamente necesario para comunicarse con nuestra API y obtener los datos actualizados. No solicitamos ningún otro permiso (como acceso a contactos, almacenamiento, cámara o micrófono).
+
+**5. Seguridad**
+
+Tomamos medidas razonables para asegurar la integridad de la comunicación entre la aplicación y nuestros servidores. La seguridad de nuestra API y de la información que se procesa en nuestros servidores es una prioridad.
+
+**6. Privacidad de los Menores de Edad**
+
+"iAnimalitos" está destinada exclusivamente a un público mayor de **18 años**. No nos dirigimos a menores de edad y, dado que no recopilamos datos personales, no procesamos a sabiendas ninguna información de ningún usuario.
+
+**7. Cambios en esta Política de Privacidad**
+
+Si en el futuro se realizan cambios en esta política, actualizaremos este documento. El uso continuado de la Aplicación constituirá la aceptación de dichos cambios.
+
+**8. Contacto**
+
+Si tienes alguna pregunta sobre nuestras prácticas de privacidad, no dudes en contactarnos a través de: [test@gmail.com](test@gmail.com)
