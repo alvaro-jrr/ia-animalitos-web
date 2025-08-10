@@ -1,0 +1,41 @@
+---
+import googlePlay from "@/assets/google_play.png";
+import appPreview from "@/assets/app_preview.png";
+import { Image } from "astro:assets";
+---
+
+<section
+	class="mx-[10vw] grid grid-cols-1 gap-12 py-16 lg:grid-cols-2 lg:py-10"
+>
+	<div class="space-y-6 self-center">
+		<div class="space-y-4">
+			<h1 class="text-4xl leading-[150%] font-bold sm:text-5xl">
+				<span class="text-blue-500">Revoluciona</span> tu <br
+					class="hidden lg:block"
+				/>
+				forma de jugar
+			</h1>
+
+			<p class="text-lg">
+				Resultados en tiempo real y probabilidades basadas en Inteligencia
+				Artificial.
+			</p>
+		</div>
+
+		<Image
+			loading="eager"
+			src={googlePlay}
+			alt="Descarga en Google Play"
+			height={48}
+		/>
+	</div>
+
+	<div class="flex items-center justify-center">
+		<Image
+			loading="eager"
+			src={appPreview}
+			alt="Previa de la aplicación"
+			height={500}
+		/>
+	</div>
+</section>

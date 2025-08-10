@@ -1,0 +1,55 @@
+---
+import logo from "@/assets/logo.png";
+import { Image } from "astro:assets";
+
+const items: {
+	label: string;
+	href: string;
+}[] = [
+	{
+		label: "Términos",
+		href: "/terms",
+	},
+	{
+		label: "Privacidad",
+		href: "/privacy",
+	},
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header
+	class="sticky top-0 right-0 left-0 flex w-full items-center justify-between gap-6 px-[5vw] py-4 backdrop-blur-lg"
+>
+	<a href="/" class="flex items-center gap-2">
+		<Image
+			loading="eager"
+			src={logo}
+			alt="Logo"
+			width={36}
+			height={36}
+			class="rounded-md"
+		/>
+
+		<p class="font-medium">iAnimalitos</p>
+	</a>
+
+	<nav>
+		<ul class="flex gap-4">
+			{
+				items.map((item) => (
+					<li>
+						<a
+							class="p-2 font-medium text-gray-500 transition-colors hover:text-gray-700 aria-[current=page]:text-gray-700"
+							aria-current={currentPath === item.href ? "page" : undefined}
+							href={item.href}
+						>
+							{item.label}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
+</header>
