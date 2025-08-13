@@ -1,13 +1,13 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import googlePlay from "@/assets/google_play.png";
-import appPreview from "@/assets/app_preview.png";
+import appPreview from "@/assets/app_preview.webp";
 import { Image } from "astro:assets";
 ---
 
 <BaseLayout>
 	<section
-		class="mx-[10vw] grid grid-cols-1 gap-12 py-16 lg:grid-cols-2 lg:py-10"
+		class="mx-[10vw] grid grid-cols-1 gap-12 py-16 lg:grid-cols-2 lg:py-12"
 	>
 		<div class="space-y-6 self-center">
 			<div class="space-y-4">
@@ -37,7 +37,7 @@ import { Image } from "astro:assets";
 				loading="eager"
 				src={appPreview}
 				alt="Previa de la aplicación"
-				height={500}
+				class="h-full max-h-[500px] object-contain"
 			/>
 		</div>
 	</section>
