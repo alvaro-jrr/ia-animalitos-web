@@ -1,15 +1,14 @@
 ---
-import SectionTitle from "@/components/SectionTitle.astro";
-import Layout from "@/layouts/Layout.astro";
+import MarkdownBody from "@/components/MarkdownBody.astro";
+import SectionLayout from "@/layouts/SectionLayout.astro";
 import { Content as TermsAndConditions } from "@/content/terms.md";
 ---
 
-<Layout>
-	<section class="mx-[5vw] space-y-6 py-16">
-		<SectionTitle title="Términos y Condiciones" />
-
-		<div>
-			<TermsAndConditions />
-		</div>
-	</section>
-</Layout>
+<SectionLayout
+	title="Términos y Condiciones"
+	description="Los términos y condiciones de iAnimalitos"
+>
+	<MarkdownBody>
+		<TermsAndConditions />
+	</MarkdownBody>
+</SectionLayout>
