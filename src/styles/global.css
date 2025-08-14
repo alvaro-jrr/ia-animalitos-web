@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Plus Jakarta Sans Variable", sans-serif;
+}
+
+body {
+	scrollbar-gutter: stable;
+}
+
+@layer base {
+	.article-content {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			@apply mt-8 mb-4 font-medium;
+		}
+
+		strong {
+			@apply font-medium;
+		}
+
+		h1 {
+			@apply text-3xl font-bold;
+		}
+
+		h2 {
+			@apply text-2xl font-bold;
+		}
+
+		h3 {
+			@apply text-xl font-semibold;
+		}
+
+		h4 {
+			@apply text-lg font-medium;
+		}
+
+		p {
+			@apply my-5;
+		}
+
+		ol,
+		ul {
+			@apply my-4 pl-5;
+		}
+
+		li {
+			@apply my-2 list-disc pl-1;
+		}
+
+		figure,
+		img,
+		video {
+			@apply my-8;
+		}
+
+		a {
+			@apply text-blue-500 transition-colors hover:text-blue-700 hover:underline;
+		}
+	}
+}

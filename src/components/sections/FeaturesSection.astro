@@ -1,0 +1,65 @@
+---
+import { ClockIcon, BotIcon, SmartphoneIcon, HeartIcon } from "@lucide/astro";
+
+type IconComponent = (props: Record<string, any>) => any;
+
+const features: {
+	title: string;
+	description: string;
+	icon: IconComponent;
+}[] = [
+	{
+		title: "Resultados en tiempo real",
+		description: "No te pierdas ningún resultado",
+		icon: ClockIcon,
+	},
+	{
+		title: "Probabilidades basadas en Inteligencia Artificial",
+		description:
+			"Descubre las probabilidades de cada resultado con nuestras predicciones basadas en Inteligencia Artificial",
+		icon: BotIcon,
+	},
+	{
+		title: "Interfaz intuitiva",
+		description: "Diseño moderno y fácil de usar para una mejor experiencia",
+		icon: SmartphoneIcon,
+	},
+	{
+		title: "Revoluciona tu experiencia",
+		description:
+			"Una nueva forma de disfrutar y analizar los resultados deportivos",
+		icon: HeartIcon,
+	},
+];
+---
+
+<section class="mx-[10vw] space-y-10 py-20">
+	<div class="space-y-4">
+		<h2 class="text-3xl leading-[150%] font-bold">
+			Toda la información en un solo lugar
+		</h2>
+
+		<p class="text-gray-500">
+			Descubre las probabilidades de cada resultado con nuestras predicciones
+			basadas en Inteligencia Artificial.
+		</p>
+	</div>
+
+	<ul class="grid grid-cols-1 gap-6 md:grid-cols-2">
+		{
+			features.map((feature) => (
+				<li class="flex gap-4 rounded-md py-6">
+					<div class="flex size-10 flex-shrink-0 items-center justify-center rounded-md bg-blue-500 text-white">
+						<feature.icon class="h-6 w-6" />
+					</div>
+
+					<div class="space-y-2">
+						<h3 class="font-medium">{feature.title}</h3>
+
+						<p class="text-gray-500">{feature.description}</p>
+					</div>
+				</li>
+			))
+		}
+	</ul>
+</section>
