@@ -57,5 +57,9 @@ body {
 		video {
 			@apply my-8;
 		}
+
+		a {
+			@apply text-blue-500 transition-colors hover:text-blue-700 hover:underline;
+		}
 	}
 }
