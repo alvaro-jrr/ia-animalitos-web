@@ -2,6 +2,7 @@
 import googlePlay from "@/assets/google_play.png";
 import appPreview from "@/assets/app_preview.webp";
 import { Image } from "astro:assets";
+import { googlePlayUrl } from "@/lib/constants";
 ---
 
 <section class="mx-[10vw] grid grid-cols-1 gap-12 py-16 lg:grid-cols-2">
@@ -19,12 +20,16 @@ import { Image } from "astro:assets";
 			</p>
 		</div>
 
-		<Image
-			loading="eager"
-			src={googlePlay}
-			alt="Descarga en Google Play"
-			class="h-12 w-fit object-contain"
-		/>
+		<a href={googlePlayUrl} target="_blank" class="hover:cursor-pointer">
+			<Image
+				loading="eager"
+				src={googlePlay}
+				alt="Descarga en Google Play"
+				class="h-12 w-fit object-contain"
+			/>
+
+			<span class="sr-only">Descarga en Google Play</span>
+		</a>
 	</div>
 
 	<div class="flex items-center justify-center">
